@@ -64,6 +64,7 @@ footer{
 .center_content{
   margin: auto;
   width: 60%;
+  margin-bottom: 1em;
 }
 
 .center_content2{
@@ -127,7 +128,7 @@ li{
 .tabell1 {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  /*width: 100%;*/
+  width: 100%;
 }
 
 .tabell1 td, .tabell1 th {
@@ -150,16 +151,7 @@ li{
 
 
 
-/*Phone screen*/
-@media screen and (max-width: 480px) {
-    body {
-      background-color: lightgreen;
-    }
-    .center_content{
-      margin: auto;
-      width: 100%;
-    }
-  }
+
 
   /*small screen*/
   @media screen and (max-width: 1000px) {
@@ -170,4 +162,14 @@ li{
       margin: auto;
       width: 90%;
     }
+  }
+  /*Phone screen*/
+  @media screen and (max-width: 480px) {
+    body {
+      background-color: lightgreen;
+   }
+    .center_content{
+      margin: auto;
+      width: 100%;
+   }
   }
