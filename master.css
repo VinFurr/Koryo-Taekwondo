@@ -83,6 +83,16 @@ li{
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  display: -webkit-flex; /*Safari*/
+}
+
+.flex_image{
+  display: inline-flex;
+  display: -webkit-flex; /*Safari*/
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto;
+  
 }
 
 /*for index.html*/
@@ -116,7 +126,11 @@ li{
   margin: 0 30px 30px 30px;
 }
 
-
+.image{
+  width: 48%;
+  margin: auto;
+  
+}
 
 /*Tabell*/ 
 /*.center_conntent tr:nth-child(even){
@@ -156,12 +170,25 @@ li{
   /*small screen*/
   @media screen and (max-width: 1000px) {
     body {
-      background-color: blueviolet;
+      /*background-color: blueviolet;*/
     }
     .center_content{
       margin: auto;
       width: 90%;
     }
+    .flex{
+      flex-direction: column;
+    }
+    .aktuelt{
+      width: 100%;
+    }
+    .innhold{
+      width: auto;
+    }
+    .info{
+      width: 100%;
+    }
+    
   }
   /*Phone screen*/
   @media screen and (max-width: 480px) {
