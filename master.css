@@ -46,6 +46,7 @@ body{
 /*footer*/
 footer{
   padding-bottom: 50px;
+  color: rgb(210, 210, 210);
 }
 .footer_flex{
   width: 50%;
@@ -65,6 +66,7 @@ footer{
   margin: auto;
   width: 60%;
   margin-bottom: 1em;
+  min-width: 650px;
 }
 
 .center_content2{
@@ -96,8 +98,13 @@ li{
 }
 
 /*for index.html*/
+
+.innhold{
+  padding: 10px 30px 30px 30px;
+}
 .info{
   width:60%;
+  
 }
 .info_bilde{
   width: 100%;
@@ -106,9 +113,7 @@ li{
   margin-top: 0;
   padding-top: 0;
 }
-.innhold{
-  padding: 10px 30px 30px 30px;
-}
+
 .aktuelt{
   width: 40%;
 }
@@ -167,14 +172,26 @@ li{
 
 
 
-  /*small screen*/
-  @media screen and (max-width: 1000px) {
+  /*tablet screen*/
+  @media screen and (max-width: 760px) {
     body {
       /*background-color: blueviolet;*/
     }
+
+    /*navigation bar*/
+    .front_img{
+      display: block;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 150px;
+    }
+    /*navigation bar end*/
+
     .center_content{
       margin: auto;
       width: 90%;
+      min-width: auto;
     }
     .flex{
       flex-direction: column;
@@ -184,9 +201,12 @@ li{
     }
     .innhold{
       width: auto;
+      padding-left: 0;
+      padding-right: 0;
     }
     .info{
       width: 100%;
+    
     }
     
   }
@@ -196,8 +216,34 @@ li{
       background-color: lightgreen;
       font-size: 0.8em;
    }
+   p, h1, h2, h3{
+    margin-left: 5px;
+    margin-right: 5px; 
+   }
+    /*navigation bar*/
+    .front_img{
+      display: block;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100px;
+    }
+    /*navigation bar end*/
     .center_content{
       margin: auto;
       width: 100%;
    }
+
+   .innhold{
+      padding: 10px 0 30px 0px;
+    }
+
+    .innhold_aktuelt{
+      margin-top: 10px;
+      padding: 0 10px 30px 10px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+
+
   }
