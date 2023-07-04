@@ -14,7 +14,10 @@ body{
   margin-right: auto;
   margin-bottom: 40px;
   display: flex;
-  justify-content: center;}
+  justify-content: center;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+
+}
 .button{
   padding: 10px;
   margin: 0;
@@ -187,6 +190,13 @@ li{
       width: 150px;
     }
     /*navigation bar end*/
+    /*footer*/
+    .footer_flex{
+      width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /*footer end*/
 
     .center_content{
       margin: auto;
@@ -206,8 +216,10 @@ li{
     }
     .info{
       width: 100%;
-    
     }
+
+    
+
     
   }
   /*Phone screen*/
