@@ -179,7 +179,12 @@ li{
   color: black;
 }
 
-
+.pictures{
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1em;
+  display: flex;
+}
 
 
 
